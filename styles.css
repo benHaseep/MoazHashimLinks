@@ -53,11 +53,13 @@ body {
   box-shadow: 0 0 10px hsl(0, 0%, 100%);
 
 }
+
 .container .card .name {
   margin-top: -50px;
   font-size: 45px;
   font-style: italic;
 }
+
 .container .card .title {
   color: hsla(0, 0%, 100%, 0.761);
   font-size: 15px;
@@ -65,14 +67,17 @@ body {
   width: 140px;
   padding-bottom: 10px;
 }
-.container .card .cta  {
+
+.container .card .cta {
   margin-top: 20px;
   font-size: 20px;
   font-weight: 600;
 }
+
 .container .card .links {
   margin-bottom: 30px;
 }
+
 .container .card a {
   display: block;
   text-decoration: none;
@@ -84,22 +89,31 @@ body {
   padding: 5px 0;
   transition: 0.2s;
 }
+
 .container .card a:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
+
 .container .card .links .youtube {
   background-color: hsla(0, 100%, 50%, 0.8);
 }
+
 .container .card .links .facebook {
   background-color: hsla(214, 89%, 52%, 0.8);
 }
+
 .container .card .links .instagram {
   background-color: hsla(340, 75%, 54%, 0.8);
 }
+
+.container .card .links .tiktok {
+  background-color: #000;
+}
+
 .container .card:nth-of-type(2) {
   padding-bottom: 30px;
 }
-.container .card:nth-of-type(2) p {}
+
 .container .card:nth-of-type(2) a {
   background-color: hsla(142, 70%, 49%, 0.8);
 }
