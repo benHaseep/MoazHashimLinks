@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="السيرة الذاتية لمعاذ أشرف هاشم - معلم قرآن وتجويد، حاصل على إجازات متصلة في القراءات والعلوم الشرعية">
+    <meta name="keywords" content="معاذ أشرف هاشم, معلم قرآن, تجويد, إجازات قرآنية, سيرة ذاتية, Quran Teacher, Tajweed">
+    <meta name="author" content="معاذ أشرف هاشم">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="معاذ أشرف هاشم | معلم قرآن وتجويد">
+    <meta property="og:description" content="سيرة ذاتية لمعلم قرآن وتجويد حاصل على إجازات متصلة بالسند النبوي">
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="ar_AR">
+    <title>معاذ أشرف هاشم | السيرة الذاتية - Quran Teacher CV</title>
+
+    <!-- Google Fonts + Font Awesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --islamic-navy: #0a1f2e;
+            --islamic-gold: #c2a15b;
+            --islamic-dark-gold: #9e7e46;
+            --islamic-emerald: #1a4731;
+            --light-cream: #fef7e6;
+            --light-bg: #fffbf0;
+            --shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            --border-gold: 1px solid rgba(194, 161, 91, 0.3);
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--light-bg);
+            color: #1e2a36;
+            transition: all 0.3s ease;
+            line-height: 1.6;
+        }
+
+        /* RTL / LTR Handling */
+        body[dir="ltr"] {
+            text-align: left;
+        }
+
+        body[dir="rtl"] {
+            text-align: right;
+        }
+
+        /* Main Container */
+        .cv-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: var(--light-cream);
+            border-radius: 32px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            position: relative;
+            border: var(--border-gold);
+        }
+
+        /* Islamic Geometric SVG Pattern Header */
+        .pattern-bg {
+            height: 12px;
+            background: repeating-linear-gradient(90deg, var(--islamic-gold) 0px, var(--islamic-gold) 2px, transparent 2px, transparent 8px);
+        }
+
+        .pattern-bg-top {
+            background: radial-gradient(circle at 10% 30%, rgba(194, 161, 91, 0.1) 2%, transparent 2.5%);
+            background-size: 28px 28px;
+            height: 8px;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--islamic-navy) 0%, #0c2b3f 100%);
+            padding: 2rem 2rem 2rem 2rem;
+            color: white;
+            position: relative;
+        }
+
+        .hero-section a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* arabesque decorative SVG */
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100' opacity='0.08'%3E%3Cpath fill='none' stroke='%23c2a15b' stroke-width='1.5' d='M50,20 L80,5 L110,20 L140,8 L170,25 M30,45 L70,30 L110,45 L150,32 L180,50 M20,70 L65,55 L115,70 L160,58 L190,75'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            background-size: 180px;
+            pointer-events: none;
+        }
+
+        .lang-switch {
+            position: absolute;
+            top: 4.2rem;
+            left: 2rem;
+            z-index: 20;
+            display: flex;
+            gap: 10px;
+            background: rgba(255, 255, 240, 0.2);
+            backdrop-filter: blur(5px);
+            padding: 6px 14px;
+            border-radius: 40px;
+            border: 1px solid var(--islamic-gold);
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 4px 12px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.2s;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        .lang-btn.active {
+            background: var(--islamic-gold);
+            color: var(--islamic-navy);
+        }
+
+        body[dir="ltr"] .lang-switch {
+            right: 2rem;
+            left: auto;
+        }
+
+        .print-pdf-btn {
+            position: absolute;
+            top: 1.2rem;
+            left: 2rem;
+            background: rgba(194, 161, 91, 0.9);
+            border: none;
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-weight: bold;
+            color: #0a1f2e;
+            cursor: pointer;
+            font-family: 'Tajawal', sans-serif;
+            transition: 0.2s;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        body[dir="ltr"] .print-pdf-btn {
+            right: 2rem;
+            left: auto;
+            font-size: 1rem;
+        }
+
+        .print-pdf-btn:hover {
+            background: var(--islamic-dark-gold);
+            color: white;
+        }
+
+        @media (max-width: 540px) {
+            body[dir="ltr"] .hero-section {
+                padding-top: 4rem;
+            }
+
+            .lang-switch {
+                top: 3rem;
+                left: 1rem;
+                padding: 4px 3px;
+            }
+
+            body[dir="ltr"] .lang-switch {
+                top: 3rem;
+                right: 1rem;
+                /* padding: 4px 3px; */
+            }
+
+            .lang-btn {
+                padding: 1.5px 4.5px;
+            }
+
+            .print-pdf-btn {
+                top: 0.5rem;
+                left: 1rem;
+                width: fit-content;
+                font-size: 0.7rem;
+                padding: 7px 9px;
+                gap: 5px;
+                margin-top: 3px;
+            }
+
+            body[dir="ltr"] .print-pdf-btn {
+                top: 0.5rem;
+                right: 1rem;
+                width: fit-content;
+                font-size: 0.75rem;
+                padding: 7px 9px;
+                gap: 5px;
+                margin-top: 3px;
+            }
+        }
+
+        .profile-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            position: relative;
+            z-index: 2;
+            margin: 1.5rem auto 0;
+        }
+
+        .profile-info h1 {
+            font-family: 'Amiri', serif;
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #fff, var(--islamic-gold));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            border-right: 3px solid var(--islamic-gold);
+            padding-right: 1rem;
+            margin: 1rem 0;
+        }
+
+        body[dir="ltr"] .tagline {
+            border-right: none;
+            border-left: 3px solid var(--islamic-gold);
+            padding-left: 1rem;
+            padding-right: 0;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-info span {
+            background: rgba(255, 255, 240, 0.15);
+            padding: 5px 12px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Cards and content */
+        .content-grid {
+            padding: 2.5rem;
+        }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 860px) {
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .profile-info h1 {
+                font-size: 2rem;
+            }
+
+            .content-grid {
+                padding: 1.5rem;
+            }
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(194, 161, 91, 0.25);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 2px solid var(--islamic-gold);
+            padding-bottom: 0.7rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-header i {
+            font-size: 1.6rem;
+            color: var(--islamic-gold);
+        }
+
+        .card-header h2 {
+            font-family: 'Amiri', serif;
+            font-weight: 800;
+            font-size: 1.6rem;
+            color: var(--islamic-navy);
+            margin: 0;
+        }
+
+        .skill-item,
+        .info-item,
+        .cert-item {
+            margin-bottom: 0.8rem;
+            display: flex;
+            /* flex-wrap: wrap; */
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .skill-badge {
+            background: #f3ede3;
+            padding: 5px 12px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border-right: 2px solid var(--islamic-gold);
+        }
+
+        body[dir="ltr"] .skill-badge {
+            border-right: none;
+            border-left: 2px solid var(--islamic-gold);
+        }
+
+        .job-item {
+            margin-bottom: 1.5rem;
+            border-right: 2px solid var(--islamic-gold);
+            padding-right: 1rem;
+        }
+
+        body[dir="ltr"] .job-item {
+            border-right: none;
+            border-left: 2px solid var(--islamic-gold);
+            padding-left: 1rem;
+            padding-right: 0;
+        }
+
+        .job-title {
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--islamic-emerald);
+        }
+
+        .job-date {
+            font-size: 0.8rem;
+            color: #8b7a5b;
+            display: inline-block;
+            margin: 5px 0 8px;
+        }
+
+        .job-desc {
+            font-size: 0.9rem;
+            color: #2c3e44;
+        }
+
+        .extra-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .extra-chip {
+            background: #e9e2d4;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+        }
+
+        hr {
+            margin: 1rem 0;
+            border-color: rgba(194, 161, 91, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.2rem;
+            background: #e6ddce;
+            font-size: 0.75rem;
+            color: #4a3b2a;
+        }
+
+        /* Print styles */
+        @media print {
+
+            /* 1. تصفير الهوامش لضمان استغلال كامل الورقة */
+            body,
+            html {
+                background: white !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                height: auto !important;
+                /* هام: يمنع المتصفح من حجز مساحة ثابتة */
+            }
+
+            /* 2. ضبط الحاوية الرئيسية */
+            .cv-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                border: none !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                border-radius: 0 !important;
+                height: auto !important;
+                /* جعل الارتفاع مرناً حسب المحتوى */
+            }
+
+            /* 3. إزالة العناصر التي تسبب فراغات غير ضرورية */
+            .hero-section {
+                background: #0a1f2e !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                margin-bottom: 0 !important;
+                /* إزالة الفراغ أسفل الهيرو */
+            }
+
+            /* 4. معالجة الشبكة (Grid) لضمان عدم تداخل المحتوى */
+            .content-grid {
+                padding: 1rem !important;
+                display: block !important;
+                /* تحويل الـ Grid إلى بلوك عادي في الطباعة */
+            }
+
+            .two-columns {
+                display: block !important;
+                /* جعل الأعمدة تحت بعضها لضمان تدفق طبيعي */
+            }
+
+            /* 5. منع ظهور مساحات بيضاء بين الكروت */
+            .card {
+                page-break-inside: avoid;
+                /* منع انقسام الكرت الواحد بين صفحتين */
+                break-inside: avoid;
+                margin-bottom: 1rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <div class="cv-container">
+        <div class="pattern-bg"></div>
+        <div class="pattern-bg-top"></div>
+
+        <div class="hero-section">
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="ar">العربية</button>
+                <button class="lang-btn" data-lang="en">English</button>
+            </div>
+            <button class="print-pdf-btn" id="printPDFBtn"><i class="fas fa-print"></i> <span data-ar="طباعة / حفظ PDF"
+                    data-en="Print / Save PDF">طباعة / حفظ PDF</span></button>
+
+            <div class="profile-row">
+                <div class="profile-info">
+                    <h1 id="nameAr">معاذ أشرف هاشم</h1>
+                    <h1 id="nameEn" style="display: none;">Moaz Ashraf Hashem</h1>
+                    <div class="tagline" data-ar="معلم قرآن وتجويد | حافظ بسند متصل إلى النبي ﷺ"
+                        data-en="Quran & Tajweed Teacher | Direct chain to Prophet ﷺ">معلم قرآن وتجويد | حافظ بسند متصل
+                        إلى النبي ﷺ</div>
+                    <div class="contact-info">
+                        <span>
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+201020073662" id="phoneVal">+201020073662</a>
+                        </span>
+
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:mozaashraf77@gmail.com" id="emailVal">mozaashraf77@gmail.com</a>
+                        </span>
+
+                        <span>
+                            <i class="fas fa-home"></i>
+                            <span class="lang-text" data-ar="الزقازيق، محافظة الشرقية، مصر"
+                                data-en="Zagazig, Sharqia Governorate, Egypt">
+                                الزقازيق، محافظة الشرقية، مصر
+                            </span>
+                        </span>
+
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="lang-text" data-ar="العمر: 24 سنة" data-en="Age: 24 years">
+                                العمر: 24 سنة
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            <div class="two-columns">
+                <!-- العمود الأيمن (RTL) أو الأيسر في LTR -->
+                <div class="right-col">
+                    <!-- نبذة -->
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-user-graduate"></i>
+                            <h2 data-ar="نبذة عني" data-en="About Me">نبذة عني</h2>
+                        </div>
+                        <p id="bioText"
+                            data-ar="معلم قرآن وتجويد، خبرة تزيد عن 6 سنوات. حافظ لكتاب الله بسند متصل بالنبي ﷺ. خبرة في تدريس القرآن والتجويد لطلاب من عدة دول عربية، مع استخدام أساليب تعليمية حديثة ومتابعة فردية."
+                            data-en="Quran and Tajweed teacher with over 6 years of experience in Quran memorization and recitation instruction. Holds an authenticated chain of transmission (Sanad) connected to the Prophet Muhammad ﷺ in Quranic recitation. Experienced in teaching Quran and Tajweed, utilizing modern teaching methodologies and providing individualized follow-up to ensure effective learning outcomes.">
+                            معلم قرآن وتجويد، خبرة تزيد عن 6 سنوات. حافظ لكتاب الله بسند متصل بالنبي ﷺ. خبرة في تدريس
+                            القرآن والتجويد لطلاب من عدة دول عربية، مع استخدام أساليب تعليمية حديثة ومتابعة فردية.</p>
+                    </div>
+
+                    <!-- التعليم والإجازات -->
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-certificate"></i>
+                            <h2 data-ar="التعليم والإجازات" data-en="Education & Ijazat">التعليم والإجازات</h2>
+                        </div>
+                        <!-- <div class="info-item"><strong data-ar="التعليم:" data-en="Education:">التعليم:</strong> <span
+                                data-ar="حاصل على ثانوية عامة ويدرس بكالوريوس تجارة قسم محاسبة - جامعة الزقازيق"
+                                data-en="High school graduate, currently studying B.Sc. Accounting, Faculty of Commerce, Zagazig University">حاصل
+                                على ثانوية عامة ويدرس بكالوريوس تجارة قسم محاسبة - جامعة الزقازيق</span></div> -->
+                        <!-- <div style="margin: 15px 0 8px 0;"><strong><i class="fas fa-star-of-life"></i> <span
+                                    data-ar="الإجازات العلمية" data-en="Scholarly Ijazat">الإجازات العلمية</span>
+                                :</strong></div> -->
+                        <div class="extra-grid" id="ijazatList">
+                            <!-- data injected via js but we'll populate static -->
+                        </div>
+                    </div>
+
+                    <!-- المهارات -->
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-code-branch"></i>
+                            <h2 data-ar="المهارات" data-en="Skills">المهارات</h2>
+                        </div>
+                        <div id="skillsList" class="extra-grid"></div>
+                    </div>
+
+                    <!-- معلومات اضافية -->
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-info-circle"></i>
+                            <h2 data-ar="معلومات إضافية" data-en="Extra Info">معلومات إضافية</h2>
+                        </div>
+                        <div id="extraInfoList"></div>
+                    </div>
+                </div>
+
+                <!-- العمود الأيسر (الخبرات) -->
+                <div class="left-col">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-briefcase"></i>
+                            <h2 data-ar="الخبرات المهنية" data-en="Professional Experience">الخبرات المهنية</h2>
+                        </div>
+                        <div id="experienceList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <i class="fas fa-quran"></i> <span data-ar="ربنا تقبل منا إنك أنت السميع العليم"
+                data-en="Our Lord, accept from us. Indeed You are the All-Hearing, All-Knowing.">ربنا تقبل منا إنك أنت
+                السميع العليم</span>
+        </footer>
+    </div>
+
+    <script>
+        // البيانات المركزية
+        const cvData = {
+            skills: [
+                { ar: "إجادة اللغة العربية تحدثًا وكتابة", en: "Proficiency in Arabic (spoken and written)" },
+                { ar: "تدريس أحكام التجويد نظريًا وعمليًا", en: "Teaching Tajweed rules (theoretical and practical)" },
+                { ar: "استخدام أساليب تعليمية حديثة", en: "Application of modern teaching methods" },
+                { ar: "التخطيط الجيد وإدارة الوقت", en: "Strong planning and time management skills" },
+                { ar: "إعداد وتنظيم البرامج التعليمية", en: "Designing and organizing educational programs" },
+                { ar: "التواصل الفعال مع الطلاب", en: "Effective communication with students" },
+                { ar: "تتبع الأخطاء وفهرستها", en: "Error tracking, analysis, and indexing for performance improvement" }
+            ],
+            ijazat: [
+                { ar: "إجازة في القاعدة النورانية (سند متصل)", en: "Ijazah in Al-Qaida Al-Nooraniyyah (with connected Sanad)" },
+                { ar: "إجازة في متن تحفة الأطفال", en: "Ijazah in _Tuhfat Al-Atfal_" },
+                { ar: "إجازة في المقدمة الجزرية", en: "Ijazah in _Al-Muqaddimah Al-Jazariyyah_" },
+                { ar: "إجازة في الأرجوزة الميئية", en: "Ijazah in _Al-Arjuzah Al-Mi’iyyah_" },
+                { ar: "إجازة في الأربعون النووية", en: "Ijazah in _Al-Arba’een An-Nawawiyyah_" },
+                { ar: "إجازة حفص وشعبة عن عاصم", en: "Ijazah in the recitations of Hafs and Shu‘bah from ‘Asim" },
+                { ar: "سند متصل في السيرة النبوية", en: "Connected Sanad in the Prophetic Biography (Seerah)" },
+                { ar: "يدرس حاليًا قراءة ابن كثير المكي", en: "Currently studying the recitation of Ibn Kathir Al-Makki" }
+            ],
+            extraInfo: [
+                { ar: "ختم القرآن الكريم عن عمر 12 سنة", en: "Completed memorization of the Holy Quran at the age of 12" },
+                { ar: "إجازة حفص عن عاصم من طريق الشاطبية", en: "Holds Ijazah in Hafs ‘an ‘Asim through the طريق الشاطبية (Ash-Shatibiyyah route)" },
+                { ar: "تدريس لفئات عمرية من 5 إلى 55 سنة من مصر، السعودية، الأردن، الإمارات، فلسطين", en: "Taught students aged 5 to 55 from Egypt, Saudi Arabia, Jordan, UAE, and Palestine" },
+                { ar: "مرونة في المواعيد، تقارير يومية، تواصل مع أولياء الأمور", en: "Flexible scheduling availability, Daily progress reports, Regular communication with parents/guardians" }
+            ],
+            experiences: [
+                { titleAr: "مشرف تحفيظ ومعلم قرآن أونلاين", titleEn: "Online Quran Supervisor & Teacher", orgAr: "أكاديمية فذكر بالقرآن، مؤسسة الماس الساطع، أكاديمية أصحاب الميمنة", orgEn: "Fadhakkir Bil-Quran Academy | Almas Al-Satea Foundation | Ashab Al-Maymanah Academy", periodAr: "سبتمبر 2023 – حتى الآن", periodEn: "September 2023 – Present", tasksAr: "تدريس القرآن والتجويد والتأسيس أونلاين، إعداد خطط تعليمية مخصصة لمختلف الفئات العمرية.", tasksEn: "Teaching Quran recitation, Tajweed, and foundational Arabic/Quranic studies online. Preparing customized educational plans for different age groups." },
+                { titleAr: "مشرف تحفيظ", titleEn: "Quran Memorization Supervisor", orgAr: "جمعية الماهر بالقرآن – الزقازيق، مصر", orgEn: "Al-Maher Bil-Quran Association", periodAr: "يناير 2020 – مارس 2024", periodEn: "January 2020 – March 2024", tasksAr: "الإشراف على حلقات التحفيظ اليومية والمكثفة، إعداد فهارس الأخطاء والمتابعة بعد الحلقات.", tasksEn: "Supervising daily and intensive Quran memorization circles. Preparing error-tracking reports and conducting post-session follow-ups." },
+                { titleAr: "مدرس قرآن (مساعد) – السعودية", titleEn: "Assistant Quran Teacher - Saudi Arabia", orgAr: "مسجد ابن العثيمين ومسجد المقداد ابن الأسود – الجبيل", orgEn: "Ibn Uthaymeen Mosque & Al-Miqdad Ibn Al-Aswad Mosque", periodAr: "2018 – 2019", periodEn: "2018 – 2019", tasksAr: "المشاركة في التحفيظ بالحلقات الدائمة والمكثفة لمدة عامين، تدريس المواد المضافة: فقه، تفسير، سيرة، عقيدة، تجويد، تشغيل الحلقات الذهبية ويوم الهمة.", tasksEn: "Assisting in permanent and intensive memorization circles for two years. Teaching supplementary Islamic subjects including Fiqh, Tafsir, Seerah, Aqeedah, and Tajweed. Managing special educational programs and motivational learning sessions." },
+                { titleAr: "إمام ومؤذن تطوعي", titleEn: "Volunteer Imam & Mu’adhin", orgAr: "مسجد ابن العثيمين ومسجد أبو بوحمود – الجبيل، السعودية", orgEn: "Ibn Uthaymeen Mosque & Abu Buhmood Mosque", periodAr: "2018 – 2019", periodEn: "2018 – 2019", tasksAr: "الالتزام بإمامة الصلاة والأذان في المسجدين.", tasksEn: "Leading congregational prayers and delivering the Adhan regularly" },
+                { titleAr: "إمام راتب", titleEn: "Resident Imam", orgAr: "مساجد متعددة – محافظة الشرقية، مصر (مسجد الخلفاء الراشدين، مسجد المدينة المنورة، الجامع الكبير)", orgEn: "Multiple Mosques in Sharqia Governorate, Egypt (Mosque of the Rightly Guided Caliphs, Mosque of Al-Madinah Al-Munawarah, Grand Mosque)", periodAr: "2019 – 2025", periodEn: "2019 – 2025", tasksAr: "عمل إمامًا بمسجد الخلفاء الراشدين، مسجد المدينة المنورة، الجامع الكبير.", tasksEn: "Serving as Imam in Al-Khulafa Al-Rashidun Mosque, Al-Madinah Al-Munawarah Mosque, and Al-Jami’ Al-Kabir Mosque." }
+            ]
+        };
+
+        // Populate static content
+        function populateStatic() {
+            // Skills
+            const skillsContainer = document.getElementById("skillsList");
+
+            cvData.skills.forEach(skillObj => {
+                const span = document.createElement("span");
+                span.className = "skill-badge";
+
+                // ضبط القيم المختلفة لكل لغة
+                span.setAttribute("data-ar", skillObj.ar);
+                span.setAttribute("data-en", skillObj.en);
+
+                // النص الابتدائي (يفضل أن يكون حسب اللغة الحالية)
+                span.innerText = skillObj.ar;
+
+                skillsContainer.appendChild(span);
+            });
+            // Ijazat
+            const ijazatContainer = document.getElementById("ijazatList");
+            cvData.ijazat.forEach(ijObj => {
+                const chip = document.createElement("span");
+                chip.className = "extra-chip";
+                chip.setAttribute("data-ar", ijObj.ar);
+                chip.setAttribute("data-en", ijObj.en);
+                chip.innerText = ijObj.ar;
+                ijazatContainer.appendChild(chip);
+            });
+            // Extra info
+            const extraContainer = document.getElementById("extraInfoList");
+            cvData.extraInfo.forEach(info => {
+                const div = document.createElement("div");
+                div.className = "info-item";
+                const iEl = document.createElement("i");
+                iEl.className = "fas fa-dot-circle";
+                iEl.style.color = "var(--islamic-gold)";
+                iEl.style.marginLeft = "8px";
+                const span = document.createElement("span");
+                span.setAttribute("data-ar", info.ar);
+                span.setAttribute("data-en", info.en);
+                span.innerText = info.ar;
+                div.appendChild(iEl);
+                div.appendChild(span);
+                extraContainer.appendChild(div);
+            });
+            // Experiences
+            const expContainer = document.getElementById("experienceList");
+            cvData.experiences.forEach(exp => {
+                const jobDiv = document.createElement("div");
+                jobDiv.className = "job-item";
+                const titleStrong = document.createElement("div");
+                titleStrong.className = "job-title";
+                titleStrong.setAttribute("data-ar", exp.titleAr);
+                titleStrong.setAttribute("data-en", exp.titleEn);
+                titleStrong.innerText = exp.titleAr;
+                const orgSpan = document.createElement("div");
+                orgSpan.style.fontWeight = "600";
+                orgSpan.style.fontSize = "0.9rem";
+                orgSpan.setAttribute("data-ar", exp.orgAr);
+                orgSpan.setAttribute("data-en", exp.orgEn);
+                orgSpan.innerText = exp.orgAr;
+                const periodSpan = document.createElement("div");
+                periodSpan.className = "job-date";
+                periodSpan.setAttribute("data-ar", exp.periodAr);
+                periodSpan.setAttribute("data-en", exp.periodEn);
+                periodSpan.innerText = exp.periodAr;
+                const descP = document.createElement("p");
+                descP.className = "job-desc";
+                descP.setAttribute("data-ar", exp.tasksAr);
+                descP.setAttribute("data-en", exp.tasksEn);
+                descP.innerText = exp.tasksAr;
+                jobDiv.appendChild(titleStrong);
+                jobDiv.appendChild(orgSpan);
+                jobDiv.appendChild(periodSpan);
+                jobDiv.appendChild(descP);
+                expContainer.appendChild(jobDiv);
+            });
+        }
+
+        // Language switcher
+        let currentLang = "ar";
+        function setLanguage(lang) {
+            currentLang = lang;
+            const isRtl = (lang === "ar");
+            document.body.dir = isRtl ? "rtl" : "ltr";
+            document.documentElement.lang = lang === "ar" ? "ar" : "en";
+            document.title = lang === "ar" ? "معاذ أشرف هاشم | السيرة الذاتية" : "Moaz Ashraf Hashem | CV";
+
+            // toggle name visibility
+            const nameAr = document.getElementById("nameAr");
+            const nameEn = document.getElementById("nameEn");
+            if (lang === "ar") {
+                nameAr.style.display = "block";
+                nameEn.style.display = "none";
+            } else {
+                nameAr.style.display = "none";
+                nameEn.style.display = "block";
+                if (!nameEn.innerText) nameEn.innerText = "Moaz Ashraf Hashem";
+            }
+
+            // Update all elements with data-ar / data-en
+            document.querySelectorAll("[data-ar][data-en]").forEach(el => {
+                if (lang === "ar") el.innerText = el.getAttribute("data-ar");
+                else el.innerText = el.getAttribute("data-en");
+            });
+            // for name and bio extra
+            const bioElem = document.getElementById("bioText");
+            if (bioElem) {
+                if (lang === "ar") bioElem.innerText = bioElem.getAttribute("data-ar");
+                else bioElem.innerText = bioElem.getAttribute("data-en");
+            }
+            // Update buttons text
+            const printSpan = document.querySelector(".print-pdf-btn span");
+            if (printSpan) {
+                if (lang === "ar") printSpan.innerText = printSpan.getAttribute("data-ar");
+                else printSpan.innerText = printSpan.getAttribute("data-en");
+            }
+
+            // Update skills, ijazat extra chips (custom dynamic re-text)
+            document.querySelectorAll(".skill-badge, .extra-chip").forEach(el => {
+                if (lang === "ar") el.innerText = el.getAttribute("data-ar") || el.innerText;
+                else el.innerText = el.getAttribute("data-en") || el.innerText;
+            });
+            document.querySelectorAll("#extraInfoList .info-item span").forEach(el => {
+                if (lang === "ar") el.innerText = el.getAttribute("data-ar");
+                else el.innerText = el.getAttribute("data-en");
+            });
+            document.querySelectorAll(".job-item .job-title").forEach(el => {
+                if (lang === "ar") el.innerText = el.getAttribute("data-ar");
+                else el.innerText = el.getAttribute("data-en");
+            });
+            document.querySelectorAll(".job-item div:not(.job-title):not(.job-date)").forEach(el => {
+                if (el.classList && el.classList.contains("job-date")) return;
+                if (el.parentElement && el.parentElement.classList && el.parentElement.classList.contains("job-item") && el.tagName === "DIV" && !el.classList.contains("job-title")) {
+                    if (lang === "ar") el.innerText = el.getAttribute("data-ar");
+                    else el.innerText = el.getAttribute("data-en");
+                }
+            });
+            document.querySelectorAll(".job-item .job-desc").forEach(el => {
+                if (lang === "ar") el.innerText = el.getAttribute("data-ar");
+                else el.innerText = el.getAttribute("data-en");
+            });
+            document.querySelectorAll(".contact-info span[data-ar]").forEach(el => {
+                if (lang === "ar") el.innerHTML = el.getAttribute("data-ar");
+                else el.innerHTML = el.getAttribute("data-en");
+            });
+            const ageSpan = document.querySelector(".contact-info span:last-child");
+            if (ageSpan && !ageSpan.hasAttribute("data-ar")) {
+                if (lang === "ar") ageSpan.innerHTML = '<i class="fas fa-calendar-alt"></i> العمر: 24 سنة';
+                else ageSpan.innerHTML = '<i class="fas fa-calendar-alt"></i> Age: 24 years';
+            }
+            // toggle lang button active
+            document.querySelectorAll(".lang-btn").forEach(btn => {
+                if (btn.getAttribute("data-lang") === lang) btn.classList.add("active");
+                else btn.classList.remove("active");
+            });
+        }
+
+        // Print PDF handler
+        document.getElementById("printPDFBtn").addEventListener("click", () => {
+            window.print();
+        });
+
+        // Event listeners for language
+        document.querySelectorAll(".lang-btn").forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                const lang = btn.getAttribute("data-lang");
+                setLanguage(lang);
+            });
+        });
+
+        // Initialize content and language
+        populateStatic();
+        // make sure nameEn exists
+        const nameEnSpan = document.getElementById("nameEn");
+        if (nameEnSpan && !nameEnSpan.innerText) nameEnSpan.innerText = "Moaz Ashraf Hashem";
+        setLanguage("ar");
+
+        // Additional fix: repopulate contact location data-ar
+        const locationSpan = document.querySelector(".contact-info span:nth-child(3)");
+        if (locationSpan) {
+            locationSpan.setAttribute("data-ar", "الزقازيق، محافظة الشرقية، مصر");
+            locationSpan.setAttribute("data-en", "Zagazig, Sharqia, Egypt");
+        }
+        const taglineDiv = document.querySelector(".tagline");
+        if (taglineDiv) {
+            taglineDiv.setAttribute("data-ar", "معلم قرآن وتجويد | حافظ بسند متصل إلى النبي ﷺ");
+            taglineDiv.setAttribute("data-en", "Quran & Tajweed Teacher | Direct chain to Prophet ﷺ");
+        }
+        const printSpanBtn = document.querySelector(".print-pdf-btn span");
+        if (printSpanBtn) {
+            printSpanBtn.setAttribute("data-ar", "طباعة / حفظ PDF");
+            printSpanBtn.setAttribute("data-en", "Print / Save PDF");
+        }
+        const footerSpan = document.querySelector("footer span");
+        if (footerSpan) {
+            footerSpan.setAttribute("data-ar", "ربنا تقبل منا إنك أنت السميع العليم");
+            footerSpan.setAttribute("data-en", "Our Lord, accept from us. Indeed You are the All-Hearing, All-Knowing.");
+        }
+        setLanguage("ar");
+        // 1. تعديل مراقب الأحداث (Event Listeners) لحفظ اللغة عند النقر
+        document.querySelectorAll(".lang-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const selectedLang = btn.getAttribute("data-lang");
+                // حفظ اللغة في ذاكرة المتصفح المحلية باسم preferredLang
+                localStorage.setItem("preferredLang", selectedLang);
+            });
+        });
+
+        // 2. وظيفة للتحقق من اللغة المحفوظة عند تحميل الصفحة
+        window.addEventListener("DOMContentLoaded", () => {
+            // محاولة جلب اللغة من الذاكرة، وإذا لم توجد نستخدم العربية كافتراضية
+            const savedLang = localStorage.getItem("preferredLang");
+
+            if (savedLang) {
+                // استدعاء دالة تغيير اللغة الموجودة مسبقاً في كودك
+                setLanguage(savedLang);
+            }
+        });
+    </script>
+</body>
+
+</html>
